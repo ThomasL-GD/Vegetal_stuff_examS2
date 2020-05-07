@@ -1,5 +1,5 @@
-#ifndef GARDENER_H
-#define GARDENER_H
+#ifndef FLOWER_H
+#define FLOWER_H
 
 class Flower : public Plant{
     private:

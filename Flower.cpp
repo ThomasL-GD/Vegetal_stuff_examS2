@@ -3,7 +3,7 @@
 #include "Flower.h"
 
 
-void Plant::dayPass(){
+void Flower::dayPass(){
 
     if(_density <= 0){
         _health -= 1;
@@ -38,7 +38,7 @@ void Plant::dayPass(){
     if(_maturity >= 40 && _maturity < 45){
         _eclosion = 1;
     }
-    esle if(_maturity >= 45){
+    else if(_maturity >= 45){
         _eclosion = 2;
     }
 
@@ -49,6 +49,6 @@ void Plant::dayPass(){
 }
 
 
-Plant::Plant (std::string name, std::string specie) : Plant(name, specie), _eclosion(0) {}; //Constructeur plein
+Flower::Flower (std::string name, std::string specie) : Plant(name, specie), _eclosion(0) {}; //Constructeur plein
 
 #endif

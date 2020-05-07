@@ -99,18 +99,19 @@ void buyPlant(Gardener * Selene){
         money -= 50;
         string name ="";
         cout << "What will be the name of your new plant ?" << endl;
-        Plant * newPlant = new Plant(name, "Grass");
+        Flower * newPlant = new Flower(name, "Flower");
         Selene -> addPlant(newPlant);
     }
     else {
         cout << "You don't have enough money to buy a plant..." << endl;
     }
+    
 
 }
 
 int main(){
 
-    Flower * Veggie = new Flower("Veggie", "Grass");
+    Flower * Veggie = new Flower("Veggie", "Flower");
     Plant * Rotiflor = new Plant("Rotiflor", "Grass");
 
 

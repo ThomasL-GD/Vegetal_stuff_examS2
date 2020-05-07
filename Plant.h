@@ -26,6 +26,8 @@ class Plant{
         void water();
         void fertilize();
 
+        virtual void dayPass();
+
 
 
         Plant(); //Constructeur vide
