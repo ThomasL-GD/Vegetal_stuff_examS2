@@ -4,17 +4,30 @@
 class Plant{
     private:
 
-        int _int;
+        int _maturity;
+        int _health;
+        int _density;
+        int _hydratation;
+        bool _fertilizer;
         std::string _name;
+        std::string _specie;
 
     public:
 
-        int getInt();
+        std::string getName();
 
-        void setString(std::string string);
+        void setName(std::string name);
+
+        void showStatus();
+        void cut();
+        void water();
+        void fertilize();
+
+        void dayPass();
+
 
         Plant(); //Constructeur vide
-        Plant(int qqch, std::string name);  //Constructeur plein
+        Plant(std::string name, std::string specie);  //Constructeur plein
 
 };
 #endif
