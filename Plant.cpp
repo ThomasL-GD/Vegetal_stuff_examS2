@@ -27,6 +27,8 @@ void Plant::water(){
 }
 
 void Plant::fertilize(){
+
+    std::cout << "test : " << _fertilizer << std::endl;
     if(_fertilizer == false){
         _fertilizer = true;
         std::cout << "You put fertilizer on " << _name << std::endl;

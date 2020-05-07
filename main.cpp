@@ -19,7 +19,7 @@ void choicePlant(Plant * plant){
 
         while (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5){
 
-            cout << endl << "Choose something to do with your plant named " << plant -> getName() << endl << "1) Observe it" << endl << "2) Cut it" << endl << "3) Water it" << endl << "4) Rename it" << endl << "5) Quit" << endl;
+            cout << endl << "Choose something to do with your plant named " << plant -> getName() << endl << "1) Observe it" << endl << "2) Cut it" << endl << "3) Water it" << endl << "4) Rename it" << endl << "5) Fertilize it (50 PO)" << endl << "6) Quit" << endl;
 
             cin >> choice;
 
@@ -47,16 +47,22 @@ void choicePlant(Plant * plant){
             plant -> setName(name);
         }
 
+        //FERTILIZE IT
+        if(choice == 5){
+            plant -> fertilize();
+            //money loss
+        }
+
 
 
         //Re-entering the while loop
-        if(choice >= 1 && choice <= 4){
+        if(choice >= 1 && choice <= 5){
             cout << endl << "Do you want to do something else with " << plant -> getName() << " ? (type Yes or No)" << endl;
             cin >> sChoice;
             if(sChoice == "Yes"){
                 choice = 0;
             }
-            else{choice = 5;}
+            else{choice = 6;}
         }
 
     }
