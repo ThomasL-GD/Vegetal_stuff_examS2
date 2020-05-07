@@ -7,6 +7,14 @@ std::string Plant::getName(){
     return _name;
 }
 
+int Plant::getHealth(){
+    return _health;
+}
+
+int Plant::getMaturity(){
+    return _maturity;
+}
+
 void Plant::setName(std::string name){
     _name = name;
 }
@@ -27,8 +35,6 @@ void Plant::water(){
 }
 
 void Plant::fertilize(){
-
-    std::cout << "test : " << _fertilizer << std::endl;
     if(_fertilizer == false){
         _fertilizer = true;
         std::cout << "You put fertilizer on " << _name << std::endl;

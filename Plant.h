@@ -2,7 +2,7 @@
 #define PLANT_H
 
 class Plant{
-    private:
+    protected:
 
         int _maturity;
         int _health;
@@ -15,6 +15,8 @@ class Plant{
     public:
 
         std::string getName();
+        int getHealth();
+        int getMaturity();
 
         void setName(std::string name);
 
