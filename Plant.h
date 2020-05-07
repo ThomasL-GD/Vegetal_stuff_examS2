@@ -15,6 +15,7 @@ class Plant{
     public:
 
         std::string getName();
+        std::string getSpecie();
         int getHealth();
         int getMaturity();
 
@@ -25,7 +26,6 @@ class Plant{
         void water();
         void fertilize();
 
-        void dayPass();
 
 
         Plant(); //Constructeur vide

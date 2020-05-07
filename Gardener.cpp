@@ -36,7 +36,18 @@ void Gardener::sellPlant(){
 
     if(_garden[i] -> getMaturity() >= 40){
         std::cout << "You sold " << _garden[i] -> getName() << std::endl;
-        _money += 150;
+
+        if(_garden[i] -> getSpecie() == "Flower"){
+            if(_garden[i] -> getMaturity() >= 40 && _garden[i] -> getMaturity() < 45){
+                _money += 200;
+            }
+            else if(_garden[i] -> getMaturity() >= 45){
+                _money += 20;
+            }
+        }
+        else if(_garden[i] -> getSpecie() == "Carnivore"){
+            _money += 150;
+        }
         _garden.erase(_garden.begin()+i);
     }
     else{

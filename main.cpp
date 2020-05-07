@@ -4,6 +4,7 @@
 
 #include "Plant.cpp"
 #include "Gardener.cpp"
+#include "Flower.cpp"
 
 using namespace std;
 
@@ -109,7 +110,7 @@ void buyPlant(Gardener * Selene){
 
 int main(){
 
-    Plant * Veggie = new Plant("Veggie", "Grass");
+    Flower * Veggie = new Flower("Veggie", "Grass");
     Plant * Rotiflor = new Plant("Rotiflor", "Grass");
 
 
